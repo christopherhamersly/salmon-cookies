@@ -5,26 +5,22 @@
   //array that holds average
 
 var storeLocations = [
-  {
-    name: 'Seattle',
+  { 
+    name: seattle,
     minCustomers: 23,
     maxCustomers: 65,
     avgCookieSale: 6.3,
     hours: 18,
     hoursOfOperation: ['6am', '7am', '8am', '9am', '10am', '11am', '12pm','1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm',],
-    
-    randomNumber: function randomSeattle(min, max) {
-      min = Math.ceil(23);
-      max = Math.floor(66);
-      return Math.floor(Math.random() * (max - min)) + min;}
-    avgcookieHour: function() {
-      for(var i=0; i<this.hoursOfOperation.length; i++){
-        cookieHour.push(this.randomNumber()*this.avgCookieSale)
-      
+    randomCustomer: function() {
+        return Math.floor(Math.random() * (this.maxCustomer - this.minCustomer + 1)) + this.minCustomer;},
+    cookieSalesSim: function() {
+      return(this.avgCookieSale * this.randomCustomer());
     }
-    }
-  },
-  {
+    },
+    seattle.cookieSalesSim(),
+    seattle.randomCustomer(),
+  }
     name: 'Tokyo',
     minCustomers: 3,
     maxCustomers: 24,
