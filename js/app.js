@@ -1,5 +1,7 @@
 'use strict';
 
+alert('im alive');
+
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm',];
 
 var seattle = {
@@ -263,76 +265,81 @@ var tableHeader = document.createElement('th');
 tableRow.header.textContent = 'time';
 var array=['6.00am', '7.00am', '8.00am', '9.00am', '10.00am', '11.00am', '12.00pm','1.00pm','2.00pm','3.00pm', '4.00pm', '5.00pm', '6.00pm'];
 
+render : function(){
 for (var i=0; i<array.length; i++){
-  tableHeader = document.createElement('th');
+  tableHeader = document.createElement('td');
   tableHeader.textContent = array[i];
   tableRow.appendChild(tableHeader);
   parentElement.appendChild(tableRow);
-}
+};
+
 var seattleTable = [i];
-tableRow = document.createElement('tr');
+tableRow = document.createElement('seattle');
 
 for (var i=0; i<seattle.cookiesSoldEachHour.length; i++){
-  var tableData = document.createElement('td');
+  var tableData = document.createElement('seattle');
   tableData.textContent = seattleTable[i];
   tableRow.appendChild(tableData);
 }
+};
 parentElement;
 
 var tokyoTable = [i];
-tableRow = document.createElement('tr');
+tableRow = document.createElement('tokyo');
 
 for (var i=0; i<tokyo.cookiesSoldEachHour.length; i++){
-  var tableData = document.createElement('td');
-  tableData.textContent = seattleTable[i];
+  var tableData = document.createElement('tokyo');
+  tableData.textContent = tokyoTable[i];
   tableRow.appendChild(tableData);
 }
 parentElement;
 
 for (var i=0; i<array.length; i++){
-  tableHeader = document.createElement('th');
+  tableHeader = document.createElement('td');
   tableHeader.textContent = array[i];
   tableRow.appendChild(tableHeader);
   parentElement.appendChild(tableRow);
 }
 var dubaiTable = [i];
-tableRow = document.createElement('tr');
+tableRow = document.createElement('dubai');
 
 for (var i=0; i<dubai.cookiesSoldEachHour.length; i++){
-  var tableData = document.createElement('td');
+  var tableData = document.createElement('dubai');
   tableData.textContent = dubaiTable[i];
   tableRow.appendChild(tableData);
 }
-parentElement
-{
+
+parentElement;
 for (var i=0; i<array.length; i++){
-  tableHeader = document.createElement('th');
+  tableHeader = document.createElement('paris');
   tableHeader.textContent = array[i];
   tableRow.appendChild(tableHeader);
   parentElement.appendChild(tableRow);
 }
 var parisTable = [i];
-tableRow = document.createElement('tr');
+tableRow = document.createElement('paris');
 
 for (var i=0; i<paris.cookiesSoldEachHour.length; i++){
-  var tableData = document.createElement('td');
+  var tableData = document.createElement('paris');
   tableData.textContent = parisTable[i];
   tableRow.appendChild(tableData);
 }
 parentElement;
 {
-for (var i=0; i<array.length; i++){
-  tableHeader = document.createElement('th');
-  tableHeader.textContent = array[i];
-  tableRow.appendChild(tableHeader);
-  parentElement.appendChild(tableRow);
-}
-var lima = [i];
-tableRow = document.createElement('tr');
 
-for (var i=0; i<lima.cookiesSoldEachHour.length; i++){
-  var tableData = document.createElement('td');
-  tableData.textContent = limaTable[i];
-  tableRow.appendChild(tableData);
+for (var i=0; i<array.length; i++){
+    tableHeader = document.createElement('th');
+    tableHeader.textContent = array[i];
+    tableRow.appendChild(tableHeader);
+    parentElement.appendChild(tableRow);
 }
-parentElement;
+  var lima = [i];
+  tableRow = document.createElement('th');
+
+  for (var i=0; i<lima.cookiesSoldEachHour.length; i++){
+    var tableData = document.createElement('th');
+    tableData.textContent = limaTable[i];
+    tableRow.appendChild(tableData);
+}
+parentElement
+}
