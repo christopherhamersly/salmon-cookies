@@ -1,0 +1,18 @@
+* {
+  color: black;
+  background-color: beige;
+}
+#chinook{
+
+}
+#family{
+  position: relative; top: -200px; right: -90px;
+  width: 46.3%;
+  margin-left: 30em;
+
+}
+#salmon{
+ position: relative; top: -350px; 
+ margin-left: 10em;
+ opacity: 30%;
+}
