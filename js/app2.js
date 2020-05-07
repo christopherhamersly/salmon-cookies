@@ -1,6 +1,8 @@
 'use strict';
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm',];
+var parentElement = document.getElementById('table');
+var allStores = [];
 
 function CookieShop(name, minCustomerPerHour, maxCustomerPerHour, avgCookiesPerPerson){
   this.name = name;
@@ -10,6 +12,7 @@ function CookieShop(name, minCustomerPerHour, maxCustomerPerHour, avgCookiesPerP
   this.customersHourly = [];
   this.cookiesHourly = [];
   this.totalCookiesDaily = 0;
+  allStores.push(this);
 }
 
 var seattle = new CookieShop('Seattle', 23, 65, 6.3);
@@ -17,6 +20,7 @@ var tokyo = new CookieShop('Tokyo', 3, 24, 1.2);
 var dubai = new CookieShop('Dubai', 23, 65, 6.3);
 var paris = new CookieShop('Paris', 20, 38, 2.3);
 var lima = new CookieShop('Lima', 2, 16, 4.6);
+
 
 CookieShop.prototype.calcCustomersEachHour = function(){
   for(var i=0; i<hours.length; i++){
@@ -41,19 +45,41 @@ CookieShop.prototype.cookiesForTheDay = function(){
   }
 
 };
-// working on double for loop
-CookieShop.prototype.cookiesByhourByLocation = function(){
-  this.cookiesHourly();
-  for(var i=0 <hours.length; i++;){
-    console.log(`${hours} + getting closer`);
-    for(var j=0; j<this.cookiesHourly; j++){
-      console.log(`+ ${this.cookiesHourly}`);
-    }
-  }
+// // working on double for loop
+// CookieShop.prototype.cookiesByhourByLocation = function(){
+//   this.cookiesHourly();
+//   for(var i=0 <hours.length; i++;){
+//     console.log(`${hours} + getting closer`);
+//     for(var j=0; j<this.cookiesHourly; j++){
+//       console.log(`+ ${this.cookiesHourly}`);
+//     }
+//   }
+// };
+
+var form = document.getElementById('form');
+
+function Store(name, minCustomerPerHour, maxCustomerPerHour, averageCookiesPerPerson){
+  this.newStore = name;
+  this.leastcookies = minCustomerPerHour;
+  this.maxcookies = maxCustomerPerHour;
+  this.average = averageCookiesPerPerson;
+  allStores.push(this);
 };
+// function handleFormSubmit(event){
+//   event.preventDefault();
+//   var newStore = event.target.storename.value;
+//   var leastcookies = event.target.leastcookies.value;
+//   var maxcookies = event.target.maxcookies.value;
+//   var average = event.target.average.value;
+//   new CookieShop(newStore, leastcookies, maxcookies, average);
 
+//   // create a new variable and render that to the new table
+//   //Create a td
+//   //fill it with data
+//   //append it to the table row
+//   var newStoreRender = 
 
-var parentElement = document.getElementById('table');
+// };
 
 CookieShop.prototype.render = function(){
   this.cookiesForTheDay();
@@ -84,3 +110,6 @@ tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
+
+
+form.addEventListener('submit', handleFormSubmit);

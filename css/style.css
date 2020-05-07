@@ -1,3 +1,9 @@
+#salmon{
+ position: fixed; top: 300px; 
+ margin-left: 10em;
+ opacity: 30%;
+ height: 35%;
+}
 #header{
 
   background-color: rgb(124, 126, 121);
@@ -8,21 +14,14 @@
   background-color: beige;
 } */
 
-/* #family{
-  position: relative; top: 0px; right: -90px;
-  width: 30%;
-  margin-left: 
-  } */
+#family{
+   opacity: 25%;
+   width: 25%;
+  }
 
-#salmon{
- position: fixed; top: 300px; 
- margin-left: 10em;
- opacity: 30%;
- height: 35%;
-}
 p {
   border: black;
-  font-size: 20em;
+  font-size: 2em;
 }
 
 #links{
