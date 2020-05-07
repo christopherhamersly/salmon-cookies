@@ -1,18 +1,91 @@
-* {
-  color: black;
+#header{
+
+  background-color: rgb(124, 126, 121);
+
+}
+ * {
+  
   background-color: beige;
-}
-#chinook{
+} */
 
-}
-#family{
-  position: relative; top: -200px; right: -90px;
-  width: 46.3%;
-  margin-left: 30em;
+/* #family{
+  position: relative; top: 0px; right: -90px;
+  width: 30%;
+  margin-left: 
+  } */
 
-}
 #salmon{
- position: relative; top: -350px; 
+ position: fixed; top: 300px; 
  margin-left: 10em;
  opacity: 30%;
+ height: 35%;
 }
+p {
+  border: black;
+  font-size: 20em;
+}
+
+#links{
+  color: azure;
+  font-size: x-large;
+  
+}
+#paris {
+  color: rgb(196, 119, 4);
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+#dubai {
+  color: rgb(196, 119, 4);
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+#seattle{
+  color: rgb(196, 119, 4);
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+#tokyo{
+  color: rgb(196, 119, 4);
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+#lima{
+  color: rgb(196, 119, 4);
+  font-size: 5em;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+#table {
+  background-color: rgb(143, 129, 109);
+  size: 30em;
+  border-radius: 2px;
+  border: crimson;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#td{
+  border: green;
+}
+li {
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+font-family: 'Comfortaa', cursive;
+}
+a {
+  font-size: xx-large;
+  text-align: right;
+}
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* tr{
+   background-color: blue;
+  size: 30em; */
+
