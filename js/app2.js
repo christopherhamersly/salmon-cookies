@@ -58,28 +58,25 @@ CookieShop.prototype.cookiesForTheDay = function(){
 
 var form = document.getElementById('form');
 
-function Store(name, minCustomerPerHour, maxCustomerPerHour, averageCookiesPerPerson){
-  this.newStore = name;
-  this.leastcookies = minCustomerPerHour;
-  this.maxcookies = maxCustomerPerHour;
-  this.average = averageCookiesPerPerson;
-  allStores.push(this);
-};
-// function handleFormSubmit(event){
-//   event.preventDefault();
-//   var newStore = event.target.storename.value;
-//   var leastcookies = event.target.leastcookies.value;
-//   var maxcookies = event.target.maxcookies.value;
-//   var average = event.target.average.value;
-//   new CookieShop(newStore, leastcookies, maxcookies, average);
-
-//   // create a new variable and render that to the new table
-//   //Create a td
-//   //fill it with data
-//   //append it to the table row
-//   var newStoreRender = 
-
+// function Store(name, minCustomerPerHour, maxCustomerPerHour, averageCookiesPerPerson){
+//   this.newStore = name;
+//   this.leastcookies = minCustomerPerHour;
+//   this.maxcookies = maxCustomerPerHour;
+//   this.average = averageCookiesPerPerson;
+//   allStores.push(this);
 // };
+
+function handleFormSubmit(event){
+  event.preventDefault();
+  var newStore = event.target.storename.value;
+  var leastcookies = parseInt(event.target.leastcookies.value);
+  var maxcookies = parseInt(event.target.maxcookies.value);
+  var average = parseInt(event.target.average.value);
+  var newStore = new CookieShop(newStore, leastcookies, maxcookies, average);
+  newStore.render();
+
+}
+
 
 CookieShop.prototype.render = function(){
   this.cookiesForTheDay();
