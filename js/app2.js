@@ -3,6 +3,7 @@
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm',];
 var parentElement = document.getElementById('table');
 var allStores = [];
+var form = document.getElementById('form');
 
 function CookieShop(name, minCustomerPerHour, maxCustomerPerHour, avgCookiesPerPerson){
   this.name = name;
@@ -56,15 +57,6 @@ CookieShop.prototype.cookiesForTheDay = function(){
 //   }
 // };
 
-var form = document.getElementById('form');
-
-// function Store(name, minCustomerPerHour, maxCustomerPerHour, averageCookiesPerPerson){
-//   this.newStore = name;
-//   this.leastcookies = minCustomerPerHour;
-//   this.maxcookies = maxCustomerPerHour;
-//   this.average = averageCookiesPerPerson;
-//   allStores.push(this);
-// };
 
 function handleFormSubmit(event){
   event.preventDefault();
@@ -76,7 +68,6 @@ function handleFormSubmit(event){
   newStore.render();
 
 }
-
 
 CookieShop.prototype.render = function(){
   this.cookiesForTheDay();
@@ -90,8 +81,6 @@ CookieShop.prototype.render = function(){
     tableData.textContent = this.cookiesHourly[i];
     tableRow.appendChild(tableData);
   }
-
-
   tableData = document.createElement('td');
   tableData.textContent = this.totalCookiesDaily;
   tableRow.appendChild(tableData);
@@ -107,6 +96,6 @@ tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
-
-
 form.addEventListener('submit', handleFormSubmit);
+
+
