@@ -46,16 +46,6 @@ CookieShop.prototype.cookiesForTheDay = function(){
   }
 
 };
-// // working on double for loop
-// CookieShop.prototype.cookiesByhourByLocation = function(){
-//   this.cookiesHourly();
-//   for(var i=0 <hours.length; i++;){
-//     console.log(`${hours} + getting closer`);
-//     for(var j=0; j<this.cookiesHourly; j++){
-//       console.log(`+ ${this.cookiesHourly}`);
-//     }
-//   }
-// };
 
 
 function handleFormSubmit(event){
@@ -64,8 +54,8 @@ function handleFormSubmit(event){
   var leastcookies = parseInt(event.target.leastcookies.value);
   var maxcookies = parseInt(event.target.maxcookies.value);
   var average = parseInt(event.target.average.value);
-  var newStore = new CookieShop(newStore, leastcookies, maxcookies, average);
-  newStore.render();
+  var newStores = new CookieShop(newStore, leastcookies, maxcookies, average);
+  newStores.render();
 
 }
 
@@ -86,6 +76,17 @@ CookieShop.prototype.render = function(){
   tableRow.appendChild(tableData);
   parentElement.appendChild(tableRow);
 };
+
+//Double Loop
+//function doubleLoopHopefully(){
+//for (var i=0; i<hours.length; i++)
+//var hoursArray
+
+//for(var j=0; j<allStores.length; i++){
+//var bottomRow = hoursArray+cookiesHourly
+//}
+
+//}
 
 function randomNumber(min, max){
   return Math.floor(Math.random() * (max-min +1)) + min;
