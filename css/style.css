@@ -1,90 +1,193 @@
-#salmon{
- position: fixed; top: 300px; 
- margin-left: 10em;
- opacity: 30%;
- height: 35%;
-}
-#header{
-
-  background-color: rgb(124, 126, 121);
-
-}
- * {
+* {
   
   background-color: beige;
-} */
+}
+
+#salmon{
+  height: 35%;
+  margin-left: 10em;
+  opacity: 30%;
+  position: fixed; top: 300px; 
+}
+
+#header{
+  background-color: rgb(124, 126, 121);
+}
 
 #family{
-   opacity: 25%;
+   opacity: 1002%;
    width: 25%;
+   height: 600px;
+   width: auto;
+   position: relative;
+   bottom: 300px;
   }
 
-p {
+#patsStory {
   border: black;
-  font-size: 2em;
+  font-size: 1.5em;
+  position: relative;
+  bottom: 900px;
+  left: 1100px;
+  width: 350px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: grey;
 }
 
 #links{
   color: azure;
-  font-size: x-large;
-  
+  font-size: x-large;  
 }
+
 #paris {
   color: rgb(196, 119, 4);
   font-size: 5em;
   text-align: center;
   font-family: 'Oswald', sans-serif;
 }
+
 #dubai {
   color: rgb(196, 119, 4);
   font-size: 5em;
-  text-align: center;
   font-family: 'Oswald', sans-serif;
+  text-align: left; 
 }
+
 #seattle{
   color: rgb(196, 119, 4);
   font-size: 5em;
-  text-align: center;
   font-family: 'Oswald', sans-serif;
+  text-align: left; 
 }
+
 #tokyo{
   color: rgb(196, 119, 4);
   font-size: 5em;
-  text-align: center;
   font-family: 'Oswald', sans-serif;
+  text-align: center; 
 }
+
 #lima{
   color: rgb(196, 119, 4);
   font-size: 5em;
-  text-align: center;
   font-family: 'Oswald', sans-serif;
+  text-align: left;
 }
+
 #table {
   background-color: rgb(143, 129, 109);
-  size: 30em;
-  border-radius: 2px;
+  border: 1px solid black;
   border: crimson;
-  font-size: xx-large;
+  font-size: 2em;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-#td{
-  border: green;
+
+td{
+  padding-top: 2em;
+  padding-left: .5em;
+  width: 25%;  
 }
+
 li {
-  font-size: 2em;
   font-family: 'Oswald', sans-serif;
-font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  background-color: brown;
 }
+
 a {
+  color: rgb(241, 162, 57);
+  float: right;
   font-size: xx-large;
   text-align: right;
 }
+
 footer {
   font-family: Arial, Helvetica, sans-serif;
+}  
+
+tr {
+  background-color: blue;
+  size: 30em; 
 }
 
-/* tr{
-   background-color: blue;
-  size: 30em; */
+#salespage {
+  float: right;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  height: 1000pt;
+  width: 1000px;
+}
 
+#chinook {
+  opacity: 10%;
+}
+
+#links {
+  background-color: rgb(124, 126, 121);
+  bottom: 0px;
+  font-size: 5em;
+  position: relative;
+  right: px;
+}
+
+#pats { 
+  float: right;
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 720px;
+  opacity: 20%;
+  position: fixed;
+  size: 30px;
+  text-align: center;
+  width: 1000px;
+
+}
+
+div {
+  font: x-large;
+}
+
+#seattletwo {
+  font-size: 20px;
+  font-family:'Quicksand', sans-serif;
+}
+
+#tokyotwo {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#paristwo {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+#dubaitwo {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;;
+}
+
+#limatwo {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#frosty {
+  height:300px;
+  left:100px;
+  position: relative;
+  top: 50px;
+}
+
+#morefish {
+  height:300px;
+  left:200px;
+  position: relative;
+  top: 50px;
+}
+#salestable {
+background-color: blue;
+}
